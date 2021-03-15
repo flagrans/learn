@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 /****************** Задание №2 **********************/
 int connectFile(std::string file1, std::string file2, std::string file3) {
@@ -33,12 +34,14 @@ int connectFile(std::string file1, std::string file2, std::string file3) {
 }
 /****************** Задание №3 **********************/
 bool checkWord(std::string st, std::string fl) {
+    std::transform(st.begin(), st.end(), st.begin(), tolower); // Приводим к нижнему регистру
     std::ifstream fs (fl);
     std::string temp = "";
     while(!fs.eof()){
         fs >> temp;
-        temp = temp.substr(0, temp.find('.', temp.size() - 1) );
-        temp = temp.substr(0, temp.find(',', temp.size() - 1) );
+        temp = temp.substr(0, temp.find('.', temp.size() - 1) ); // Убираем точку в конце слова
+        temp = temp.substr(0, temp.find(',', temp.size() - 1) ); // Убираем запятую, здесь наверное было бы логично воспользоваться регулярными выражениями...
+        std::transform(temp.begin(), temp.end(), temp.begin(), tolower); // Приводим к нижнему регистру
         if (temp == st) {
             fs.close();
             return true;
@@ -64,6 +67,10 @@ int main(int argc, char *argv[]) {
     std::string  file3 = "result.txt";
     connectFile(file1, file2, file3);
 /****************** Задание №3 **********************/
+    // Здесь примем за условие, что у анс все-таки осмысленный текст а не набор символов, т.к. если у нас набор символов,
+    // то необходимо будет в одной большой строке искать вхождение типа использовать find - но в таком случае можно целиком
+    // или построчно считывать в переменную и искать вхождение с помощью метода find
+
     if (argc != 3) {
         std::cout << "Wrong number of parameters!" << std::endl;
         return 1;
