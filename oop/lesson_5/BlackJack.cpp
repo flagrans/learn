@@ -110,7 +110,7 @@ bool GenericPlayer::IsBoosted() const {
 }
 
 void GenericPlayer::Bust() const {
-    std::cout << "Player " << name << "Vasya has bust." << std::endl;
+    std::cout << "Player " << name << " has bust." << std::endl;
 
 }
 
