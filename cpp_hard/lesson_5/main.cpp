@@ -38,18 +38,39 @@ int main() {
     }
 // Task 2
     {
-        std::cout << "********** Task 2 **********" << std::endl;
+        std::cout << "********** Task 2 **********" << std::endl;// Считываем по словам и формируем предложения по признаку конца предложения ".", "?" или "!"
+        std::cout << "Enter \"...\" for end:" << std::endl;
         std::string temp_p="";
         std::string temp="";
         std::multimap<int, std::string> mySet;
         std::cin >> temp;
-        while(temp != "endend") { //Здесь для окончания ввода необходимо ввести строку "endend"
+        while(temp != "...") { //Здесь для окончания ввода необходимо ввести строку "endend"
             temp_p += temp + " ";
             if(temp.back() == '.' || temp.back() == '!' || temp.back() == '?') { // Признак окончания предложения знаки препинания ".", "?" и "!"
                 mySet.insert(std::make_pair(temp_p.size(), temp_p));
                 temp_p="";
             }
             std::cin >> temp;
+        }
+        std::cout << "*** List ***" << std::endl;
+        std::for_each(mySet.begin(), mySet.end(), [](std::pair<int, std::string> p){std::cout << p.second << std::endl;});
+
+        std::cout << "****************************" << std::endl;
+        std::cout << std::endl << std::endl;
+    }
+// Task 2.1
+    {
+        std::cout << "********** Task 2-1 **********" << std::endl; // Либо считать за предложение введенную строку
+        std::cout << "Enter \"...\" for end:" << std::endl;
+        std::string temp="";
+        std::multimap<int, std::string> mySet;
+        std::getline(std::cin, temp); // Лишний вызов чтобы считался конец строки, иначе в set будет пустая строка
+        std::getline(std::cin, temp);
+        while(temp != "...") { /*Здесь для окончания ввода необходимо ввести строку "..."
+            (либо сделать через for и запросить у пользователя кол-во вводимых предложений)*/
+            mySet.insert(std::make_pair(temp.size(), temp));
+            temp="";
+            std::getline(std::cin, temp);
         }
         std::cout << "*** List ***" << std::endl;
         std::for_each(mySet.begin(), mySet.end(), [](std::pair<int, std::string> p){std::cout << p.second << std::endl;});
