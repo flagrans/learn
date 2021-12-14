@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.21)
+project(urok7)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(urok7 main.cpp)
+
+INCLUDE(FindProtobuf)
+
+FIND_PACKAGE(Protobuf REQUIRED)
+
+INCLUDE_DIRECTORIES(${PROTOBUF_INCLUDE_DIR})
+
+PROTOBUF_GENERATE_CPP(PROTO_SRC PROTO_HEADER test.proto)
+ADD_LIBRARY(proto3 ${PROTO_HEADER} ${PROTO_SRC})
+TARGET_LINK_LIBRARIES(proto3)
+
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
+
+add_executable(protobuf main.cpp)
+
+TARGET_LINK_LIBRARIES(protobuf proto3 ${PROTOBUF_LIBRARY})
