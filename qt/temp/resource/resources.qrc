@@ -1,0 +1,10 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+        <file>C++.png</file>
+        <file>csh.png</file>
+        <file>java.png</file>
+        <file>js.png</file>
+        <file>python.png</file>
+        <file>qt.png</file>
+    </qresource>
+</RCC>
