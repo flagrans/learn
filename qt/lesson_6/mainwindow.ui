@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Текстовый редактор</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="labelCurPath">
+          <property name="text">
+           <string>Текущий путь:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditCurPath">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
+        <item>
+         <widget class="QMdiArea" name="mdiArea"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="mFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="mOpen"/>
+    <addaction name="mOpenReadOnly"/>
+    <addaction name="mSave"/>
+    <addaction name="mSaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="mPrint"/>
+    <addaction name="separator"/>
+    <addaction name="mExit"/>
+   </widget>
+   <widget class="QMenu" name="mHelp">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="mReference"/>
+    <addaction name="mSettings"/>
+   </widget>
+   <widget class="QMenu" name="openWindows">
+    <property name="title">
+     <string>Окно</string>
+    </property>
+    <addaction name="minSub"/>
+    <addaction name="maxSub"/>
+    <addaction name="cascadeSub"/>
+    <addaction name="tileSub"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="mFile"/>
+   <addaction name="openWindows"/>
+   <addaction name="mHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QTreeView" name="treeView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <attribute name="headerVisible">
+        <bool>true</bool>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="mSave">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="statusTip">
+    <string>Сохранить файл</string>
+   </property>
+  </action>
+  <action name="mOpen">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="toolTip">
+    <string>Открыть</string>
+   </property>
+   <property name="statusTip">
+    <string>Открыть текстовый файл</string>
+   </property>
+  </action>
+  <action name="mSaveAs">
+   <property name="text">
+    <string>Сохранить как...</string>
+   </property>
+   <property name="statusTip">
+    <string>Сохранить файл под другим именем</string>
+   </property>
+  </action>
+  <action name="mExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="statusTip">
+    <string>Выход из приложения</string>
+   </property>
+  </action>
+  <action name="mReference">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+   <property name="statusTip">
+    <string>Справка по программе</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="mOpenReadOnly">
+   <property name="text">
+    <string>Открыть только для чтения</string>
+   </property>
+   <property name="statusTip">
+    <string>Открыть файл только для чтения</string>
+   </property>
+  </action>
+  <action name="mSettings">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="statusTip">
+    <string>Настройки программы</string>
+   </property>
+  </action>
+  <action name="mPrint">
+   <property name="text">
+    <string>Печать</string>
+   </property>
+   <property name="statusTip">
+    <string>Распечатать файл</string>
+   </property>
+  </action>
+  <action name="minSub">
+   <property name="text">
+    <string>Свернуть все окна</string>
+   </property>
+  </action>
+  <action name="maxSub">
+   <property name="text">
+    <string>Восстановить все окна</string>
+   </property>
+  </action>
+  <action name="cascadeSub">
+   <property name="text">
+    <string>Расположить каскадом</string>
+   </property>
+  </action>
+  <action name="tileSub">
+   <property name="text">
+    <string>Расположить плиткой</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
