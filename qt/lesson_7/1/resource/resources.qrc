@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+		<file>aleft.png</file>
+		<file>acenter.png</file>
+       	<file>aright.png</file>
+    </qresource>
+</RCC>
