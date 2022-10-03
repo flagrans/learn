@@ -54,6 +54,7 @@ Rectangle {
         }
         TextField {
             id: name_z
+            objectName: "name_z"
             focus: true
             width: 200
         }
@@ -279,13 +280,13 @@ Rectangle {
     }
     MyBut {
         id: m_but_clear
+        objectName: "m_but_clear"
         text: "Очистить форму"
         anchors.left: m_but_add.right
         anchors.top: m_but_add.top
         anchors.leftMargin: 5
         onClicked: {
             clearForms()
-            //task.testTask("asdasd", 2)
         }
     }
 }
