@@ -8,7 +8,6 @@ Rectangle {
         return new Date(year, month, 0).getDate();
     }
     function clearForms() {
-        // Тут что-то совсем плохо обновляется модель в днях при смене месяца...
         var today = new Date();
         control_y.currentIndex = 0
         control_m.currentIndex = today.getMonth()
@@ -26,7 +25,7 @@ Rectangle {
         label_tasks.text = task.getCountTasks()
     }
     property string test_task_name: name_z.text
-    property alias test_clear_button: m_but_clear
+    //property alias test_clear_button: m_but_clear
     Row {
         id: count_tasks
         x: 5
