@@ -1,0 +1,25 @@
+# ninja log v5
+1	37	0	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/CMakeFiles/cmake.verify_globs	ea5115e6fa067430
+2	868	1677253864546732455	dz_4_1_autogen/timestamp	478d364b1b70d9cc
+2	868	1677253864546732455	dz_4_1_autogen/mocs_compilation.cpp	478d364b1b70d9cc
+2	868	1677253864546732455	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/dz_4_1_autogen/timestamp	478d364b1b70d9cc
+2	868	1677253864546732455	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/dz_4_1_autogen/mocs_compilation.cpp	478d364b1b70d9cc
+869	922	1677253864614766456	dz_4_1_autogen/6WJNPILU4A/qrc_resources.cpp	a334cf4bc5523ed4
+869	922	1677253864614766456	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/dz_4_1_autogen/6WJNPILU4A/qrc_resources.cpp	a334cf4bc5523ed4
+870	951	1677253864646782456	.lupdate/TextEdit_en_EN.ts.stamp	34b5ca689cb76c53
+870	951	1677253864646782456	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/.lupdate/TextEdit_en_EN.ts.stamp	34b5ca689cb76c53
+870	958	1677253864654786456	.lupdate/TextEdit_ru_RU.ts.stamp	ded4dbbc5ddb6dfb
+870	958	1677253864654786456	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/.lupdate/TextEdit_ru_RU.ts.stamp	ded4dbbc5ddb6dfb
+951	978	1677253864670794456	TextEdit_en_EN.qm	7de0fb911411a111
+951	978	1677253864670794456	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/TextEdit_en_EN.qm	7de0fb911411a111
+958	980	1677253864674796456	TextEdit_ru_RU.qm	ef4d0c25d9c186f
+958	980	1677253864674796456	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/TextEdit_ru_RU.qm	ef4d0c25d9c186f
+982	2156	1677253865851384462	CMakeFiles/dz_4_1.dir/dz_4_1_autogen/6WJNPILU4A/qrc_resources.cpp.o	3f187c3b966c5d19
+982	8227	1677253871914414486	CMakeFiles/dz_4_1.dir/myjson.cpp.o	9685dc5f2021ae90
+981	9072	1677253872758836490	CMakeFiles/dz_4_1.dir/settings.cpp.o	4f5db70a386d829e
+981	9164	1677253872854884490	CMakeFiles/dz_4_1.dir/main.cpp.o	cf454908dc8818b
+980	9772	1677253873459186492	CMakeFiles/dz_4_1.dir/dz_4_1_autogen/mocs_compilation.cpp.o	d8fa873ec49ba35d
+981	11868	1677253875552232503	CMakeFiles/dz_4_1.dir/mainwindow.cpp.o	339c75ddc5a1fdb5
+11869	12891	1677253876572742509	dz_4_1	61d116f042dba30f
+1	35	0	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/CMakeFiles/cmake.verify_globs	ea5115e6fa067430
+1	37	0	/home/flagrans/learn/learn/qt/build-lesson_4_5-Desktop_Qt_6_2_4_GCC_64bit-Debug/CMakeFiles/cmake.verify_globs	ea5115e6fa067430
